@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: Arial, serif;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+h2 {
+	color:  #445161;
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 30px;
+	font-weight: normal;
+}
+
+h3 {
+	color:  #445161;
+	font-size: 24px;
+	font-weight: normal;
+
+}
+
+/*--------Header------------*/
+
+.header {
+	background-color: #445162;
+	padding-top: 60px;
+}
+
+.header_menu {
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(68, 81, 97, 0.6);
+	top: 0;
+	width: 100%;
+}
+
+.header_menu ul {
+	text-align: center;
+	list-style: none;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header_menu li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.header_menu li:last-child {
+	margin: 0;
+}
+
+.header_menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.header_menu a:hover {
+	color: orange;
+}
+
+.header_name {
+	width: 50%;
+	float: left;
+}
+
+.header_title {
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 60px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+	margin: 40px 0 14px 0;
+	font-weight: normal;
+
+}
+
+.header_ul {
+	list-style: none;
+	font-family: Arial;
+	color:  #ffffff;
+	font-size: 20px;
+	line-height: 36px;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+	list-style-image: url(../img/tick.png);
+	margin-left: 35px;
+}
+
+.header_image {
+	float: right;
+	margin: 50px 0 50px 0;
+}
+
+/*--------Product------------*/
+
+.product {
+	padding: 50px 0;
+}
+
+.product_desc {
+	float: left;
+	width: calc(100% - 530px);	
+}
+
+
+.product_image {
+	float: right;	
+}
+
+/*--------Params------------*/
+
+.params {
+	background-color: #f5f5f5;
+	padding: 50px 0 15px 0;
+}
+
+.params_title {
+	text-align: center;
+}
+
+.params_text {
+	display: table
+}
+
+.params_text > div {
+	display: inline-block;
+	width: 50%;
+	background: url(../img/plus.gif) no-repeat 0 4px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	margin-bottom: 35px;
+	vertical-align: top;
+}
+
+
+/*--------screenshots------------*/
+
+.screenshots {
+	padding: 50px 0;
+}
+
+.screenshots_title {
+	text-align: center;
+}
+
+.screenshots_item {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	padding-right: 15px;
+}
+
+.screenshots_item > img {
+	float: left;
+}
+
+.screenshots_text {
+	padding-left: 215px;
+}
+
+/*--------reviews------------*/
+
+.reviews {
+	background-color: #f5f5f5;
+	padding: 42px 0 45px 0;
+}
+
+.reviews_title {
+	text-align: center;
+}
+
+.reviews_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.reviews_wrapper > article {
+	width: calc(50% - 15px);
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 25px;
+}
+
+.reviews_ava {
+	border-radius: 50%;
+}
+
+.reviews_text {
+	padding: 10px 15px;
+	background-color: #ebebeb;
+	margin-left: 27px;
+	font-size: 14px;
+	font-style: italic;
+	position: relative;
+	border-radius: 4px;
+}
+
+.reviews_text:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12.5px 13px 12.5px 0;
+	border-color: transparent #ebebeb transparent transparent;
+	position: absolute;
+	left: -13px;
+	top: 28px;
+}
+
+.reviews_author {
+	margin-top: 10px;
+	color:  #989898;
+	font-size: 14px;
+	font-style: normal;
+}
+
+/*--------buy------------*/
+
+.price {
+	padding: 50px 0;
+}
+
+.price_title {
+	text-align: center;
+}
+
+.price_wrapper {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.price_item {
+	background-color: #445162;
+	border-radius: 6px;
+	width: 300px;
+	margin: 0 22px 0 22px;
+	padding: 12px 0 20px 0;
+}
+
+.price_item:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4)
+} 
+
+.price_item h3 {
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.price_value {
+	background-color: #fff;
+	margin: 15px 2px;
+	font-size: 40px;
+	padding: 12px 0;
+	color: #445162;
+	text-align: center;
+}
+
+.price_options {
+	margin: 20px 20px 20px 40px ;
+	color: #fff;
+	font-size: 14px;
+}
+
+.price_options li {
+	margin-bottom: 4px;
+}
+
+.buy_button {
+	display: block;
+	color: #445162;
+	background-color: #fff;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 18px;
+	border-radius: 6px;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.buy_button:hover {
+	background-color: #ffa500;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.buy_button:active {
+	top: 3px;
+	position: relative;
+}
+
+/*--------contacts------------*/
+
+.contacts {
+	background-color: #445162;
+	padding: 50px 0;
+}
+
+.contacts_title {
+	color: #fff;
+	text-align: center;
+}
+
+.contacts form {
+	float: left;
+	width: 500px;
+}
+
+.contacts_wrapper {
+	width: 800px;
+	margin: auto;
+}
+
+.contacts input,
+.contacts textarea {
+	border: none;
+	border-radius: 4px;
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	color:  #445162;
+	font-size: 16px;
+	font-family: Arial;
+	box-sizing: border-box; 
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+	outline: none;
+}
+
+input.send_button {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 140px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+input.send_button:hover {
+	background-color: #ffa500;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+input.send_button:active {
+	top: 3px;
+	position: relative;
+}
+
+.contacts_numbers {
+	padding-left: 545px;
+}
+
+.contacts_info div {
+	margin-bottom: 18px;
+	color: white;
+	font-size: 16px;
+}
+
+.contacts_info img {
+	vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contacts_info_phone {
+	position: relative;
+	top: -2px;
+}
+
+.contacts_info a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contacts_social a {
+	font-family: "Socialico";
+	color: white;
+	font-size: 55px;
+	text-decoration: none;
+}
+
+.contacts_social a:hover {
+	color: #ffa500;
+}
+
+.copyright {
+	background-color: #fff;
+	text-align: center;
+	font-size: 12px;
+	color: #445162;
+	padding: 5px 0;
+}
